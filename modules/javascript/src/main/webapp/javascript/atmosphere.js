@@ -190,7 +190,8 @@
                     server: null
                 },
                 ackInterval: 0,
-                closeAsync: false,
+                //workaround for https://github.com/Atmosphere/atmosphere/issues/1863
+                closeAsync: true,
                 reconnectOnServerError: true,
                 onError: function (response) {
                 },
